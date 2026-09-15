@@ -45,7 +45,7 @@ export function LoadingScreen() {
               className="relative w-[180px] h-[120px] md:w-[240px] md:h-[160px] flex items-center justify-center mb-2"
             >
               <Image
-                src="/wxb logo-03.png"
+                src="/logo.png"
                 alt="WhyMarketing Logo"
                 fill
                 className="object-contain"
