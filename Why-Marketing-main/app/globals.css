@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-noir-bg: #0B0B0B;
+  --color-noir-surface: #111111;
+  --color-noir-card: #171717;
+  --color-noir-footer: #050505;
+  --color-noir-nav: rgba(10, 10, 10, 0.82);
+  
+  --color-noir-text: #F5F2EB;
+  --color-noir-text-sec: #C8C3B7;
+  --color-noir-muted: #9A9487;
+  
+  --color-gold-primary: #D4AF37;
+  --color-gold-light: #E6C76A;
+  --color-gold-muted: #B88A2A;
+  --color-gold-dark: #8C6924;
+  
+  --color-border-gold: rgba(212, 175, 55, 0.15);
+  --color-border-white: rgba(255, 255, 255, 0.06);
+
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-cormorant);
+  --font-heading: var(--font-cormorant);
+}
+
+:root {
+  --background: #0B0B0B;
+  --foreground: #F5F2EB;
+}
+
+
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hide-loader #global-loader {
+  display: none !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
