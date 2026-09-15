@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
+import { useLenis } from "lenis/react";
 
 export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
+  const lenis = useLenis();
   
   // Track scroll progress
   const { scrollYProgress } = useScroll();
@@ -29,10 +31,14 @@ export function ScrollToTop() {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.5 });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
