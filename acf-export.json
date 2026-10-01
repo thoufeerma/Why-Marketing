@@ -1,0 +1,155 @@
+[
+  {
+    "key": "group_homepage_settings",
+    "title": "Homepage Content Sections",
+    "fields": [
+      {
+        "key": "field_founders_repeater",
+        "label": "Founders",
+        "name": "founders",
+        "type": "repeater",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "collapsed": "field_founder_name",
+        "min": 0,
+        "max": 0,
+        "layout": "block",
+        "button_label": "Add Founder",
+        "sub_fields": [
+          {
+            "key": "field_founder_name",
+            "label": "Name",
+            "name": "name",
+            "type": "text"
+          },
+          {
+            "key": "field_founder_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text"
+          },
+          {
+            "key": "field_founder_image",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "return_format": "url"
+          },
+          {
+            "key": "field_founder_bio",
+            "label": "Bio (Paragraphs)",
+            "name": "bio",
+            "type": "textarea",
+            "instructions": "Enter each paragraph on a new line."
+          },
+          {
+            "key": "field_founder_certs",
+            "label": "Certifications & Expertise",
+            "name": "certifications",
+            "type": "textarea",
+            "instructions": "Enter each certification on a new line."
+          },
+          {
+            "key": "field_founder_specs",
+            "label": "Specialties",
+            "name": "specialties",
+            "type": "textarea",
+            "instructions": "Enter each specialty on a new line."
+          },
+          {
+            "key": "field_founder_image_pos",
+            "label": "Image Position",
+            "name": "image_position",
+            "type": "select",
+            "choices": {
+              "left": "Left",
+              "right": "Right"
+            },
+            "default_value": "left"
+          }
+        ]
+      },
+      {
+        "key": "field_challenges_repeater",
+        "label": "Challenges",
+        "name": "challenges",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Add Challenge",
+        "sub_fields": [
+          {
+            "key": "field_challenge_num",
+            "label": "Number",
+            "name": "num",
+            "type": "text"
+          },
+          {
+            "key": "field_challenge_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text"
+          },
+          {
+            "key": "field_challenge_desc",
+            "label": "Description",
+            "name": "desc",
+            "type": "textarea"
+          }
+        ]
+      },
+      {
+        "key": "field_service_cards_repeater",
+        "label": "Service Cards",
+        "name": "service_cards",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Add Service Card",
+        "sub_fields": [
+          {
+            "key": "field_service_card_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text"
+          },
+          {
+            "key": "field_service_card_subtitle",
+            "label": "Subtitle",
+            "name": "subtitle",
+            "type": "text"
+          },
+          {
+            "key": "field_service_card_image",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "return_format": "url"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "page"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Custom fields for the homepage sections (Founders, Challenges, Services).",
+    "modified": 1700000000
+  }
+]

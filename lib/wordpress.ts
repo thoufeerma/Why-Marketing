@@ -193,3 +193,14 @@ export async function getFaqCategories(): Promise<string[]> {
   const cats = data.map((c: any) => c.name.toUpperCase());
   return ["ALL", ...cats];
 }
+
+// ============================================================================
+// PAGE BUILDER API
+// ============================================================================
+
+export async function getHomePageData(pageId: number) {
+  // We use fetchWP since it already uses NEXT_PUBLIC_WORDPRESS_URL and handles errors
+  const data = await fetchWP(`/pages/${pageId}?acf_format=standard`);
+  if (!data) return null;
+  return data.acf; // Returns the ACF flexible content fields
+}

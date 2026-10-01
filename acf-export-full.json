@@ -1,0 +1,479 @@
+[
+  {
+    "key": "group_page_builder",
+    "title": "Page Builder (Homepage)",
+    "fields": [
+      {
+        "key": "field_page_builder_flex",
+        "label": "Page Sections",
+        "name": "page_sections",
+        "type": "flexible_content",
+        "layouts": [
+          {
+            "key": "layout_hero",
+            "name": "hero_section",
+            "label": "Hero Section",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_hero_title",
+                "label": "Title",
+                "name": "title",
+                "type": "text"
+              },
+              {
+                "key": "field_hero_subtitle",
+                "label": "Subtitle",
+                "name": "subtitle",
+                "type": "text"
+              },
+              {
+                "key": "field_hero_desc",
+                "label": "Description",
+                "name": "description",
+                "type": "textarea"
+              }
+            ]
+          },
+          {
+            "key": "layout_challenges",
+            "name": "challenges_section",
+            "label": "Challenges Section",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_chal_sec_title",
+                "label": "Section Title",
+                "name": "section_title",
+                "type": "text"
+              },
+              {
+                "key": "field_chal_sec_desc",
+                "label": "Section Description",
+                "name": "section_description",
+                "type": "textarea"
+              },
+              {
+                "key": "field_challenges_rep",
+                "label": "Challenges List",
+                "name": "challenges_list",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_chal_num",
+                    "label": "Number",
+                    "name": "number",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_chal_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_chal_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_services",
+            "name": "services_section",
+            "label": "Services Section",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_serv_sec_title",
+                "label": "Section Title",
+                "name": "section_title",
+                "type": "text"
+              },
+              {
+                "key": "field_serv_sec_desc",
+                "label": "Section Description",
+                "name": "section_description",
+                "type": "textarea"
+              },
+              {
+                "key": "field_services_rep",
+                "label": "Services List",
+                "name": "services_list",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_serv_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_serv_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                  },
+                  {
+                    "key": "field_serv_icon",
+                    "label": "Icon Name (lucide)",
+                    "name": "icon",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_serv_cap",
+                    "label": "Capabilities (one per line)",
+                    "name": "capabilities",
+                    "type": "textarea"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_service_cards",
+            "name": "service_cards_section",
+            "label": "Service Cards Section",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_service_cards_rep",
+                "label": "Cards",
+                "name": "cards",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_card_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_card_sub",
+                    "label": "Subtitle",
+                    "name": "subtitle",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_card_img",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_process",
+            "name": "process_section",
+            "label": "Process Timeline",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_process_rep",
+                "label": "Timeline Steps",
+                "name": "steps",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_proc_num",
+                    "label": "Number",
+                    "name": "number",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_proc_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_proc_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_why_choose_us",
+            "name": "why_choose_us_section",
+            "label": "Why Choose Us",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_why_rep",
+                "label": "Features",
+                "name": "features",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_why_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_why_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_industries",
+            "name": "industries_section",
+            "label": "Industries",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_ind_rep",
+                "label": "Industries List",
+                "name": "industries",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_ind_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_ind_insight",
+                    "label": "Insight",
+                    "name": "insight",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_ind_img",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_case_studies",
+            "name": "case_studies_section",
+            "label": "Case Studies",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_cs_rep",
+                "label": "Case Studies List",
+                "name": "case_studies",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_cs_client",
+                    "label": "Client Name",
+                    "name": "client",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_cs_industry",
+                    "label": "Industry",
+                    "name": "industry",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_cs_desc",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                  },
+                  {
+                    "key": "field_cs_stats",
+                    "label": "Stats/Result",
+                    "name": "stats",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_cs_img",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_testimonials",
+            "name": "testimonials_section",
+            "label": "Testimonials",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_test_rep",
+                "label": "Testimonials List",
+                "name": "testimonials",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_test_quote",
+                    "label": "Quote",
+                    "name": "quote",
+                    "type": "textarea"
+                  },
+                  {
+                    "key": "field_test_author",
+                    "label": "Author Name",
+                    "name": "author",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_test_role",
+                    "label": "Author Role",
+                    "name": "role",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_test_img",
+                    "label": "Author Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_leadership",
+            "name": "leadership_section",
+            "label": "Leadership (Founders)",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_lead_rep",
+                "label": "Founders List",
+                "name": "founders",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_lead_name",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_lead_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_lead_img",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url"
+                  },
+                  {
+                    "key": "field_lead_bio",
+                    "label": "Bio (paragraphs on new lines)",
+                    "name": "bio",
+                    "type": "textarea"
+                  },
+                  {
+                    "key": "field_lead_certs",
+                    "label": "Certifications (one per line)",
+                    "name": "certifications",
+                    "type": "textarea"
+                  },
+                  {
+                    "key": "field_lead_specs",
+                    "label": "Specialties (one per line)",
+                    "name": "specialties",
+                    "type": "textarea"
+                  },
+                  {
+                    "key": "field_lead_pos",
+                    "label": "Image Position",
+                    "name": "image_position",
+                    "type": "select",
+                    "choices": {
+                      "left": "Left",
+                      "right": "Right"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "layout_faq",
+            "name": "faq_section",
+            "label": "FAQ Section",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_faq_rep",
+                "label": "FAQs",
+                "name": "faqs",
+                "type": "repeater",
+                "layout": "block",
+                "sub_fields": [
+                  {
+                    "key": "field_faq_q",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text"
+                  },
+                  {
+                    "key": "field_faq_a",
+                    "label": "Answer",
+                    "name": "answer",
+                    "type": "textarea"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "button_label": "Add Section"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "page"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Flexible content page builder."
+  }
+]
