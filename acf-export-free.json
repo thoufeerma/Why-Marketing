@@ -1,0 +1,631 @@
+[
+  {
+    "key": "group_homepage_free",
+    "title": "Homepage Content (Free Version)",
+    "fields": [
+      {
+        "key": "tab_hero",
+        "label": "Hero Section",
+        "name": "tab_hero",
+        "type": "tab"
+      },
+      {
+        "key": "hero_title",
+        "label": "Hero Title",
+        "name": "hero_title",
+        "type": "text"
+      },
+      {
+        "key": "hero_subtitle",
+        "label": "Hero Subtitle",
+        "name": "hero_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "hero_description",
+        "label": "Hero Description",
+        "name": "hero_description",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_founders_main",
+        "label": "Founders",
+        "name": "tab_founders_main",
+        "type": "tab"
+      },
+      {
+        "key": "tab_founder_1",
+        "label": "Founder 1",
+        "name": "tab_founder_1",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "founder_name_1",
+        "label": "Name",
+        "name": "founder_name_1",
+        "type": "text"
+      },
+      {
+        "key": "founder_title_1",
+        "label": "Title",
+        "name": "founder_title_1",
+        "type": "text"
+      },
+      {
+        "key": "founder_image_1",
+        "label": "Image",
+        "name": "founder_image_1",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "founder_bio_1",
+        "label": "Bio",
+        "name": "founder_bio_1",
+        "type": "textarea"
+      },
+      {
+        "key": "founder_certs_1",
+        "label": "Certifications",
+        "name": "founder_certs_1",
+        "type": "textarea"
+      },
+      {
+        "key": "founder_specs_1",
+        "label": "Specialties",
+        "name": "founder_specs_1",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_founder_2",
+        "label": "Founder 2",
+        "name": "tab_founder_2",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "founder_name_2",
+        "label": "Name",
+        "name": "founder_name_2",
+        "type": "text"
+      },
+      {
+        "key": "founder_title_2",
+        "label": "Title",
+        "name": "founder_title_2",
+        "type": "text"
+      },
+      {
+        "key": "founder_image_2",
+        "label": "Image",
+        "name": "founder_image_2",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "founder_bio_2",
+        "label": "Bio",
+        "name": "founder_bio_2",
+        "type": "textarea"
+      },
+      {
+        "key": "founder_certs_2",
+        "label": "Certifications",
+        "name": "founder_certs_2",
+        "type": "textarea"
+      },
+      {
+        "key": "founder_specs_2",
+        "label": "Specialties",
+        "name": "founder_specs_2",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_challenges_main",
+        "label": "Challenges",
+        "name": "tab_challenges_main",
+        "type": "tab"
+      },
+      {
+        "key": "tab_challenge_1",
+        "label": "Challenge 1",
+        "name": "tab_challenge_1",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "chal_title_1",
+        "label": "Title",
+        "name": "chal_title_1",
+        "type": "text"
+      },
+      {
+        "key": "chal_desc_1",
+        "label": "Description",
+        "name": "chal_desc_1",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_challenge_2",
+        "label": "Challenge 2",
+        "name": "tab_challenge_2",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "chal_title_2",
+        "label": "Title",
+        "name": "chal_title_2",
+        "type": "text"
+      },
+      {
+        "key": "chal_desc_2",
+        "label": "Description",
+        "name": "chal_desc_2",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_challenge_3",
+        "label": "Challenge 3",
+        "name": "tab_challenge_3",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "chal_title_3",
+        "label": "Title",
+        "name": "chal_title_3",
+        "type": "text"
+      },
+      {
+        "key": "chal_desc_3",
+        "label": "Description",
+        "name": "chal_desc_3",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_challenge_4",
+        "label": "Challenge 4",
+        "name": "tab_challenge_4",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "chal_title_4",
+        "label": "Title",
+        "name": "chal_title_4",
+        "type": "text"
+      },
+      {
+        "key": "chal_desc_4",
+        "label": "Description",
+        "name": "chal_desc_4",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_services_main",
+        "label": "Services",
+        "name": "tab_services_main",
+        "type": "tab"
+      },
+      {
+        "key": "tab_service_1",
+        "label": "Service 1",
+        "name": "tab_service_1",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "serv_title_1",
+        "label": "Title",
+        "name": "serv_title_1",
+        "type": "text"
+      },
+      {
+        "key": "serv_desc_1",
+        "label": "Description",
+        "name": "serv_desc_1",
+        "type": "textarea"
+      },
+      {
+        "key": "serv_icon_1",
+        "label": "Icon Name",
+        "name": "serv_icon_1",
+        "type": "text"
+      },
+      {
+        "key": "serv_caps_1",
+        "label": "Capabilities",
+        "name": "serv_caps_1",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_service_2",
+        "label": "Service 2",
+        "name": "tab_service_2",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "serv_title_2",
+        "label": "Title",
+        "name": "serv_title_2",
+        "type": "text"
+      },
+      {
+        "key": "serv_desc_2",
+        "label": "Description",
+        "name": "serv_desc_2",
+        "type": "textarea"
+      },
+      {
+        "key": "serv_icon_2",
+        "label": "Icon Name",
+        "name": "serv_icon_2",
+        "type": "text"
+      },
+      {
+        "key": "serv_caps_2",
+        "label": "Capabilities",
+        "name": "serv_caps_2",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_service_3",
+        "label": "Service 3",
+        "name": "tab_service_3",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "serv_title_3",
+        "label": "Title",
+        "name": "serv_title_3",
+        "type": "text"
+      },
+      {
+        "key": "serv_desc_3",
+        "label": "Description",
+        "name": "serv_desc_3",
+        "type": "textarea"
+      },
+      {
+        "key": "serv_icon_3",
+        "label": "Icon Name",
+        "name": "serv_icon_3",
+        "type": "text"
+      },
+      {
+        "key": "serv_caps_3",
+        "label": "Capabilities",
+        "name": "serv_caps_3",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_service_4",
+        "label": "Service 4",
+        "name": "tab_service_4",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "serv_title_4",
+        "label": "Title",
+        "name": "serv_title_4",
+        "type": "text"
+      },
+      {
+        "key": "serv_desc_4",
+        "label": "Description",
+        "name": "serv_desc_4",
+        "type": "textarea"
+      },
+      {
+        "key": "serv_icon_4",
+        "label": "Icon Name",
+        "name": "serv_icon_4",
+        "type": "text"
+      },
+      {
+        "key": "serv_caps_4",
+        "label": "Capabilities",
+        "name": "serv_caps_4",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_service_5",
+        "label": "Service 5",
+        "name": "tab_service_5",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "serv_title_5",
+        "label": "Title",
+        "name": "serv_title_5",
+        "type": "text"
+      },
+      {
+        "key": "serv_desc_5",
+        "label": "Description",
+        "name": "serv_desc_5",
+        "type": "textarea"
+      },
+      {
+        "key": "serv_icon_5",
+        "label": "Icon Name",
+        "name": "serv_icon_5",
+        "type": "text"
+      },
+      {
+        "key": "serv_caps_5",
+        "label": "Capabilities",
+        "name": "serv_caps_5",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_service_6",
+        "label": "Service 6",
+        "name": "tab_service_6",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "serv_title_6",
+        "label": "Title",
+        "name": "serv_title_6",
+        "type": "text"
+      },
+      {
+        "key": "serv_desc_6",
+        "label": "Description",
+        "name": "serv_desc_6",
+        "type": "textarea"
+      },
+      {
+        "key": "serv_icon_6",
+        "label": "Icon Name",
+        "name": "serv_icon_6",
+        "type": "text"
+      },
+      {
+        "key": "serv_caps_6",
+        "label": "Capabilities",
+        "name": "serv_caps_6",
+        "type": "textarea"
+      },
+      {
+        "key": "tab_service_cards_main",
+        "label": "Service Cards",
+        "name": "tab_service_cards_main",
+        "type": "tab"
+      },
+      {
+        "key": "tab_scard_1",
+        "label": "Card 1",
+        "name": "tab_scard_1",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "scard_title_1",
+        "label": "Title",
+        "name": "scard_title_1",
+        "type": "text"
+      },
+      {
+        "key": "scard_sub_1",
+        "label": "Subtitle",
+        "name": "scard_sub_1",
+        "type": "text"
+      },
+      {
+        "key": "scard_image_1",
+        "label": "Image",
+        "name": "scard_image_1",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "tab_scard_2",
+        "label": "Card 2",
+        "name": "tab_scard_2",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "scard_title_2",
+        "label": "Title",
+        "name": "scard_title_2",
+        "type": "text"
+      },
+      {
+        "key": "scard_sub_2",
+        "label": "Subtitle",
+        "name": "scard_sub_2",
+        "type": "text"
+      },
+      {
+        "key": "scard_image_2",
+        "label": "Image",
+        "name": "scard_image_2",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "tab_scard_3",
+        "label": "Card 3",
+        "name": "tab_scard_3",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "scard_title_3",
+        "label": "Title",
+        "name": "scard_title_3",
+        "type": "text"
+      },
+      {
+        "key": "scard_sub_3",
+        "label": "Subtitle",
+        "name": "scard_sub_3",
+        "type": "text"
+      },
+      {
+        "key": "scard_image_3",
+        "label": "Image",
+        "name": "scard_image_3",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "tab_scard_4",
+        "label": "Card 4",
+        "name": "tab_scard_4",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "scard_title_4",
+        "label": "Title",
+        "name": "scard_title_4",
+        "type": "text"
+      },
+      {
+        "key": "scard_sub_4",
+        "label": "Subtitle",
+        "name": "scard_sub_4",
+        "type": "text"
+      },
+      {
+        "key": "scard_image_4",
+        "label": "Image",
+        "name": "scard_image_4",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "tab_scard_5",
+        "label": "Card 5",
+        "name": "tab_scard_5",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "scard_title_5",
+        "label": "Title",
+        "name": "scard_title_5",
+        "type": "text"
+      },
+      {
+        "key": "scard_sub_5",
+        "label": "Subtitle",
+        "name": "scard_sub_5",
+        "type": "text"
+      },
+      {
+        "key": "scard_image_5",
+        "label": "Image",
+        "name": "scard_image_5",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "tab_scard_6",
+        "label": "Card 6",
+        "name": "tab_scard_6",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "scard_title_6",
+        "label": "Title",
+        "name": "scard_title_6",
+        "type": "text"
+      },
+      {
+        "key": "scard_sub_6",
+        "label": "Subtitle",
+        "name": "scard_sub_6",
+        "type": "text"
+      },
+      {
+        "key": "scard_image_6",
+        "label": "Image",
+        "name": "scard_image_6",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "tab_scard_7",
+        "label": "Card 7",
+        "name": "tab_scard_7",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "scard_title_7",
+        "label": "Title",
+        "name": "scard_title_7",
+        "type": "text"
+      },
+      {
+        "key": "scard_sub_7",
+        "label": "Subtitle",
+        "name": "scard_sub_7",
+        "type": "text"
+      },
+      {
+        "key": "scard_image_7",
+        "label": "Image",
+        "name": "scard_image_7",
+        "type": "image",
+        "return_format": "url"
+      },
+      {
+        "key": "tab_scard_8",
+        "label": "Card 8",
+        "name": "tab_scard_8",
+        "type": "tab",
+        "placement": "top"
+      },
+      {
+        "key": "scard_title_8",
+        "label": "Title",
+        "name": "scard_title_8",
+        "type": "text"
+      },
+      {
+        "key": "scard_sub_8",
+        "label": "Subtitle",
+        "name": "scard_sub_8",
+        "type": "text"
+      },
+      {
+        "key": "scard_image_8",
+        "label": "Image",
+        "name": "scard_image_8",
+        "type": "image",
+        "return_format": "url"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "page"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Homepage content fields compatible with free ACF."
+  }
+]

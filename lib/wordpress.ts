@@ -37,8 +37,19 @@ async function fetchWP(endpoint: string) {
     return null;
   }
   
+  const headers: HeadersInit = {};
+  
+  // Use Basic Auth with Consumer Key & Secret if provided
+  const ck = process.env.WP_CONSUMER_KEY;
+  const cs = process.env.WP_CONSUMER_SECRET;
+  
+  if (ck && cs) {
+    headers['Authorization'] = 'Basic ' + Buffer.from(`${ck}:${cs}`).toString('base64');
+  }
+  
   try {
     const res = await fetch(`${WP_URL}/wp-json/wp/v2${endpoint}`, {
+      headers,
       next: { revalidate: 300 }, // Cache for 5 minutes
     });
 

@@ -7,7 +7,12 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Check, Shield } from "lucide-react";
 
-export function HeroSection() {
+export function HeroSection({ data }: { data?: any }) {
+  const title = data?.hero_title || `Your Brand <br />
+<span class="italic bg-clip-text text-transparent bg-gradient-to-r from-gold-light via-gold-primary to-gold-dark pr-2">Deserves More</span> <br />
+Than Marketing.`;
+  const description = data?.hero_description || "WhyMarketing is a premium consulting and brand engineering partner helping ambitious businesses create timeless identities and measurable growth.";
+
   return (
     <section id="hero" className="relative min-h-0 py-24 md:py-32 md:min-h-[100svh] flex items-center overflow-hidden bg-noir-bg w-full">
       {/* Ambient Background Glows */}
@@ -24,15 +29,14 @@ export function HeroSection() {
             className="flex flex-col gap-8 md:gap-10 max-w-2xl items-center text-center lg:items-start lg:text-left mx-auto lg:mx-0"
           >
             <div>
-              <h1 className="text-[2.75rem] md:text-6xl lg:text-[6rem] font-serif font-medium leading-none text-noir-text -tracking-[0.03em]">
-                Your Brand <br />
-                <span className="italic bg-clip-text text-transparent bg-gradient-to-r from-gold-light via-gold-primary to-gold-dark pr-2">Deserves More</span> <br />
-                Than Marketing.
-              </h1>
+              <h1 
+                className="text-[2.75rem] md:text-6xl lg:text-[6rem] font-serif font-medium leading-none text-noir-text -tracking-[0.03em]"
+                dangerouslySetInnerHTML={{ __html: title }}
+              />
             </div>
 
             <p className="text-[16px] md:text-[18px] text-noir-muted font-normal leading-[1.7] -tracking-[0.01em] max-w-[500px]">
-              WhyMarketing is a premium consulting and brand engineering partner helping ambitious businesses create timeless identities and measurable growth.
+              {description}
             </p>
           </motion.div>
 

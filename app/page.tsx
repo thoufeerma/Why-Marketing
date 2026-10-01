@@ -15,10 +15,15 @@ import { BlogSection } from "@/components/sections/BlogSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
 
-export default function Home() {
+import { getHomePageData } from "@/lib/wordpress";
+
+export default async function Home() {
+  // Fetch ACF data from WordPress for the Home page (ID: 23)
+  const pageData = await getHomePageData(23);
+
   return (
     <>
-      <HeroSection />
+      <HeroSection data={pageData} />
       <ChallengesSection />
       <TrustSection />
       <ServicesSection />
