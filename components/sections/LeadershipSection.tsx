@@ -17,10 +17,10 @@ const founders = [
     bio: [
       "Mubeen is the Founder of WhyMarketing and an AI Digital Marketing Strategist with 7+ years of experience in digital marketing, brand growth, and online business strategy.",
       "Starting his journey in 2017, Mubeen has worked with 500+ brands across different markets, helping businesses build their digital presence, generate visibility, acquire customers, and scale through strategic digital marketing.",
-      "With experience across India and the GCC, particularly the Dubai and UAE market, his approach combines traditional digital marketing expertise with emerging AI-powered marketing strategies.",
-      "He holds certifications in Google Fundamentals, 1 Million Prompters, and Dubai-based professional training, with a strong focus on applying AI to modern marketing, content, customer acquisition, and business growth.",
+      "With experience across India and the GCC, particularly the Dubai and UAE market, his approach combines traditional digital marketing expertise with emerging AI powered marketing strategies.",
+      "He holds certifications in Google Fundamentals, 1 Million Prompters, and Dubai based professional training, with a strong focus on applying AI to modern marketing, content, customer acquisition, and business growth.",
       "At WhyMarketing, Mubeen focuses on developing growth strategies that connect branding, performance marketing, social media, SEO, AI, content, and customer acquisition into one scalable system.",
-      "For Mubeen, digital marketing isn't just about getting attention — it's about turning attention into business."
+      "For Mubeen, digital marketing isn't just about getting attention. It's about turning attention into business."
     ],
     certifications: [
       "Google Fundamentals",
@@ -31,7 +31,7 @@ const founders = [
       "Performance Marketing",
       "Social Media Marketing",
       "Brand Growth & Customer Acquisition",
-      "AI-Powered Marketing"
+      "AI Powered Marketing"
     ],
     specialties: [
       "AI Digital Marketing", "SEO & AEO", "GEO & AI Search", "Performance Marketing", "Social Media Marketing", "Brand Strategy", "Lead Generation", "Content Strategy", "GCC Marketing", "Dubai Digital Marketing", "Kerala Digital Marketing"
@@ -40,12 +40,12 @@ const founders = [
   },
   {
     name: "Assna Samad",
-    title: "Co-Founder & Brand Strategist",
+    title: "Co Founder & Brand Strategist",
     image: "/assna-founder.png",
     bio: [
       "With a passion for turning ideas into impactful brands, Assna Samad has been working in the field of brand strategy and visual communication since 2020.",
       "Holding a Diploma in Advertisement Designing, she combines creative thinking, strategic perspective, and a strong understanding of visual identity to help businesses communicate who they are and what they stand for.",
-      "As the Co-Founder of WhyMarketing, Assna focuses on building brands with purpose — from defining their brand identity and positioning to developing a consistent visual presence that connects with the right audience.",
+      "As the Co Founder of WhyMarketing, Assna focuses on building brands with purpose. From defining their brand identity and positioning to developing a consistent visual presence that connects with the right audience.",
       "Her work brings together branding, creative direction, visual communication, content, and brand storytelling to create businesses that are not only visually strong but also memorable and strategically positioned.",
       "For Assna, branding is more than making a business look good. It's about creating an identity, telling the right story, and building a brand people remember."
     ],
