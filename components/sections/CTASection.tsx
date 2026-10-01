@@ -26,7 +26,9 @@ export function CTASection() {
                 Start Free Audit
               </Link>
               <Link 
-                href="mailto:hello@whymarketing.com"
+                href="https://wa.me/919495494275"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-primary tracking-wide bg-transparent border border-gold-primary text-gold-primary hover:bg-gold-primary/5 hover:-translate-y-[2px] active:translate-y-0 h-14 px-12 py-3 text-[16px] w-full sm:w-auto"
               >
                 Book Consultation

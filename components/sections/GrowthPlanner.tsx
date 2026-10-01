@@ -215,7 +215,12 @@ export function GrowthPlanner() {
                     <button className="inline-flex items-center justify-center px-8 py-4 text-[14px] font-bold tracking-wide text-noir-text bg-noir-surface border border-gold-primary rounded-full hover:bg-[rgba(212,175,55,0.05)] transition-colors">
                       Download Strategy PDF
                     </button>
-                    <a href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-[14px] font-bold tracking-wide text-noir-bg bg-gold-primary rounded-full hover:bg-gold-light transition-colors">
+                    <a 
+                      href="https://wa.me/919495494275" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center justify-center px-8 py-4 text-[14px] font-bold tracking-wide text-noir-bg bg-gold-primary rounded-full hover:bg-gold-light transition-colors"
+                    >
                       Book a Strategy Session
                     </a>
                   </div>

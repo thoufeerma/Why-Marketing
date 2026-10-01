@@ -62,26 +62,44 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <form className="space-y-3 md:space-y-4 mt-3 md:mt-4" onSubmit={(e) => e.preventDefault()}>
+              <form 
+                className="space-y-3 md:space-y-4 mt-3 md:mt-4" 
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.currentTarget);
+                  const data = {
+                    name: formData.get("name") || "",
+                    company: formData.get("company") || "",
+                    phone: formData.get("phone") || "",
+                    email: formData.get("email") || "",
+                    website: formData.get("website") || "",
+                    help: formData.get("help") || "",
+                  };
+                  
+                  const message = `Hello WhyMarketing! I would like to request a free audit.%0A%0A*Name:* ${data.name}%0A*Company:* ${data.company}%0A*Phone:* ${data.phone}%0A*Email:* ${data.email}%0A*Website:* ${data.website}%0A*Requirements:* ${data.help}`;
+                  
+                  window.open(`https://wa.me/919495494275?text=${message}`, '_blank');
+                }}
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                   <div className="space-y-1">
                     <label className="text-[10px] md:text-[11px] font-bold tracking-wide uppercase text-noir-muted ml-1">Full Name</label>
-                    <input type="text" placeholder="Your full name" className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
+                    <input name="name" type="text" placeholder="Your full name" required className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
                   </div>
                   <div className="space-y-1">
                     <label className="text-[10px] md:text-[11px] font-bold tracking-wide uppercase text-noir-muted ml-1">Company / Business</label>
-                    <input type="text" placeholder="Company name" className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
+                    <input name="company" type="text" placeholder="Company name" className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                   <div className="space-y-1">
                     <label className="text-[10px] md:text-[11px] font-bold tracking-wide uppercase text-noir-muted ml-1">Phone Number</label>
-                    <input type="tel" placeholder="+1 (555) 000-0000" className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
+                    <input name="phone" type="tel" placeholder="+1 (555) 000-0000" required className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
                   </div>
                   <div className="space-y-1">
                     <label className="text-[10px] md:text-[11px] font-bold tracking-wide uppercase text-noir-muted ml-1">Business Email</label>
-                    <input type="email" placeholder="you@company.com" className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
+                    <input name="email" type="email" placeholder="you@company.com" required className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
                   </div>
                 </div>
 
@@ -89,14 +107,14 @@ export function HeroSection() {
                   <label className="text-[10px] md:text-[11px] font-bold tracking-wide uppercase text-noir-muted ml-1 flex items-center gap-2">
                     Website URL <span className="text-[9px] font-normal opacity-60">(Optional)</span>
                   </label>
-                  <input type="url" placeholder="https://yourwebsite.com" className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
+                  <input name="website" type="url" placeholder="https://yourwebsite.com" className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all" />
                 </div>
 
                 <div className="space-y-1">
                   <label className="text-[10px] md:text-[11px] font-bold tracking-wide uppercase text-noir-muted ml-1 flex items-center gap-2">
                     What do you need help with? <span className="text-[9px] font-normal opacity-60">(Optional)</span>
                   </label>
-                  <textarea rows={2} placeholder="Tell us about your SEO goals, challenges, or requirements..." className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all resize-none"></textarea>
+                  <textarea name="help" rows={2} placeholder="Tell us about your SEO goals, challenges, or requirements..." className="w-full bg-noir-card border border-[rgba(212,175,55,0.15)] rounded-[10px] md:rounded-xl px-3 py-2 md:px-4 md:py-2.5 text-[13px] text-white placeholder:text-noir-muted/50 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none transition-all resize-none"></textarea>
                 </div>
 
                 <button type="submit" className="w-full mt-2 bg-gold-primary text-noir-bg font-bold tracking-wide py-2.5 md:py-3 rounded-[10px] md:rounded-xl hover:bg-gold-light transition-all duration-300 hover:-translate-y-[2px] active:translate-y-0 shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">

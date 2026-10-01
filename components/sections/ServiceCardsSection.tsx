@@ -92,13 +92,17 @@ export function ServiceCardsSection() {
                 
                 <div className="flex flex-col xl:flex-row items-center justify-between mt-auto pt-3 md:pt-4 border-t border-[rgba(212,175,55,0.08)] gap-2">
                   <a 
-                    href="#contact" 
+                    href="https://wa.me/919495494275" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex w-full xl:w-auto items-center justify-center px-2 py-1.5 md:px-4 md:py-2 text-[10px] md:text-[12px] font-bold tracking-wide text-noir-text border border-gold-primary/30 rounded-full hover:bg-gold-primary hover:text-noir-bg transition-colors"
                   >
                     Whatsapp Now
                   </a>
                   <a 
-                    href="#contact"
+                    href="https://wa.me/919495494275"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-8 h-8 md:w-10 md:h-10 shrink-0 rounded-full bg-noir-card border border-gold-primary/20 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors"
                     aria-label="Whatsapp Now"
                   >

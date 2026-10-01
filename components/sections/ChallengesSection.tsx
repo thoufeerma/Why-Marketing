@@ -30,7 +30,7 @@ const challenges = [
 
 export function ChallengesSection() {
   return (
-    <section id="challenges" className="py-24 md:py-32 min-h-0 md:min-h-[100svh] flex items-center bg-noir-bg relative w-full border-t border-border-white">
+    <section id="challenges" className="py-24 md:py-32 bg-noir-bg relative w-full border-t border-border-white">
       <Container>
         {/* Header */}
         <FadeIn className="flex flex-col items-center text-center mb-16 max-w-3xl mx-auto pt-10 md:pt-0">
@@ -72,7 +72,9 @@ export function ChallengesSection() {
             "If any of these challenges sound familiar, you're exactly who we built WhyMarketing for."
           </p>
           <Link
-            href="#contact"
+            href="https://wa.me/919495494275"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 text-[15px] font-semibold tracking-wide text-noir-bg bg-gold-primary rounded-full hover:bg-gold-light transition-all duration-300 hover:-translate-y-[2px] active:translate-y-0 shadow-lg hover:shadow-xl"
           >
             Book a Strategy Call

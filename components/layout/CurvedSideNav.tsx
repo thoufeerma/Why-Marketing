@@ -9,12 +9,11 @@ import Image from "next/image";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/#about" },
-  { name: "Digital marketing", href: "/#services" },
-  { name: "Branding", href: "/#services" },
+  { name: "Services", href: "/#services" },
   { name: "Resources", href: "/resources" },
   { name: "Case Studies", href: "/#case-studies" },
   { name: "Blog", href: "/#blog" },
-  { name: "Contact", href: "/#contact" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function CurvedSideNav() {
@@ -75,7 +74,9 @@ export function CurvedSideNav() {
         {/* Desktop Action Button */}
         <div className="hidden lg:flex items-center pointer-events-auto shrink-0">
           <Link
-            href="/#contact"
+            href="https://wa.me/919495494275"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3.5 text-[14px] font-bold tracking-wide text-noir-bg bg-gold-primary rounded-full hover:bg-gold-light transition-colors shrink-0"
           >
             Book Consultation
@@ -98,7 +99,9 @@ export function CurvedSideNav() {
           {/* Mobile Actions */}
           <div className="flex items-center gap-4 shrink-0">
             <Link
-              href="/#contact"
+              href="https://wa.me/919495494275"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden md:inline-flex items-center justify-center px-7 py-3.5 text-[14px] font-bold tracking-wide text-noir-bg bg-gold-primary rounded-full hover:bg-gold-light transition-colors shadow-lg"
             >
               Book Consultation
@@ -180,7 +183,9 @@ export function CurvedSideNav() {
 
             <div className="p-12 md:p-16">
               <Link
-                href="/#contact"
+                href="https://wa.me/919495494275"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="inline-flex items-center justify-center px-8 py-4 text-[15px] font-semibold tracking-wide text-noir-bg bg-gold-primary rounded-full hover:bg-gold-light transition-colors w-full"
               >
